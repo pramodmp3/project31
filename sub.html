@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly Responsive Navbar</title>
+    <link rel="stylesheet" href="sub.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar-header">
+      <nav class="navbar-container">
+        <a href="./home2.html" class="navbar-logo-link">
+          <img
+            src="./files/logooo.webp"
+            alt="Stackly Company Logo"
+            class="navbar-logo"
+          />
+          <!-- <span class="navbar-company-name">Stackly</span> -->
+        </a>
+
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <span class="bar bar-top"></span>
+          <span class="bar bar-middle"></span>
+          <span class="bar bar-bottom"></span>
+        </button>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <div class="nav-dropdown-parent">
+              <a href="./404.html" class="nav-link nav-link-text">HOME2</a>
+              <button
+                class="dropdown-toggle"
+                aria-expanded="false"
+                aria-controls="submenu-home"
+              >
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <ul class="submenu" id="submenu-home">
+              <li class="submenu-item">
+                <a href="#home1" class="submenu-link">HOME1</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#services" class="nav-link">OUR SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#careers" class="nav-link">CAREERS</a>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-dropdown-parent">
+              <a href="./about.html" class="nav-link nav-link-text">ABOUT</a>
+              <button
+                class="dropdown-toggle"
+                aria-expanded="false"
+                aria-controls="submenu-about"
+              >
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <ul class="submenu" id="submenu-about">
+              <li class="submenu-item">
+                <a href="#about-us" class="submenu-link">ABOUT US</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#global" class="submenu-link">GLOBAL</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="#blog" class="nav-link">BLOG</a></li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script src="sub.js"></script>
+  </body>
+</html>
