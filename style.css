@@ -1138,13 +1138,21 @@ a {
 }
 @media (max-width: 768px) {
   .hero-video {
-    top: 85%; /* move even more downward for mobile */
-    min-width: 130%; /* avoid black edges after clipping */
+    top: 50%;                    /* perfect vertical center */
+    left: 50%;                   /* perfect horizontal center */
+
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+
+    min-width: 130%;             /* avoid empty edges after clipping */
     min-height: 130%;
-    clip-path: inset(0 12% 0 12%); /* bigger side gap on small screens */
+
+    clip-path: inset(0 4% 0 4%); /* small left/right gap */
   }
 
   .video-background-container {
-    /* border-radius: 16px; softer radius on mobile */
+    border-radius: 18px;
   }
 }
+
+
