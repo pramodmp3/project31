@@ -1138,7 +1138,7 @@ a {
 }
 @media (max-width: 768px) {
   .hero-video {
-    top: 50%;                    /* perfect vertical center */
+    top: 70%;                    /* perfect vertical center */
     left: 50%;                   /* perfect horizontal center */
 
     transform: translate(-50%, -50%);
@@ -1154,5 +1154,6 @@ a {
     border-radius: 18px;
   }
 }
+
 
 
